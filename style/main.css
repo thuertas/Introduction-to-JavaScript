@@ -1,0 +1,175 @@
+/* FONTS */
+.brand-font {
+    font-family: 'Gochi Hand', cursive;
+    color: #49274A;
+}
+
+.title-font {
+    font-family: 'Finger Paint', cursive;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F8EEE7;
+}
+
+/*BODY SETUP*/
+body {margin: 0px;}
+
+/*GLOBAL SETUP*/
+a {
+    text-decoration: none;
+}
+
+/* ------------ HEADER ----------------*/
+header {
+    background-color: #D83F87;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: none;
+    z-index: 10;
+    height: 53px;
+}
+
+header img {
+    width: 30px;
+    vertical-align: middle;
+    padding: 5px;
+    display: inline;
+}
+
+header .main-nav {
+    display: inline;
+    padding-left: 16px;
+}
+
+header .main-nav a {
+    color: #49274A;
+    text-align: center;
+    padding: 7px 16px 11px 16px;
+}
+
+header .main-nav a:hover, a:target { 
+    background-color: #49274A;
+    color: #F4DECB;
+}
+
+.top-image {
+    width: 100%;
+}
+
+/*----------------------------- BODY -----------------------------*/
+/****************HOME PAGE*********************/
+/****************Slide*********************/
+#slider {
+    position: relative;
+    height: 360px;
+    padding: 0px;
+    margin: 50px 0px 10px 0px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #F8EEE7;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide img {
+    width: 300px;
+}
+
+/****************Content*********************/
+.opening-section {
+    color: #49274A;
+    padding: 10px 15% 50px 15%;
+    text-align: center;
+}
+
+.second-section {
+    background-color: #F4DECB;
+    color: #49274A;
+    text-align: left;
+    padding: 50px 15%;
+    height: auto; /*will fix the size of the content*/
+}
+
+.opening-section h1, .second-section h1, .third-section h1 {
+    text-align: center;
+}
+
+.opening-section h1::first-letter, .second-section h1::first-letter, .third-section h1::first-letter {
+    text-transform: capitalize; /* to make sure that all the FIRST letter of the titles are uppercase*/
+}
+
+.second-section .main-img {
+    width: 220px;
+    float: right;
+    margin-left: 15px;
+    height: auto;
+}
+
+.second-section img {
+    width: 272px;
+    height: 195px;
+    margin: 40px 10px;
+}
+
+.third-section {
+    background-color: #94618e;
+    color: #F4DECB;
+    text-align: center;
+    padding: 50px 15%;
+}
+
+.third-section img {
+    height: 300px;
+    margin-left: 15px;
+}
+
+/****************The learn more text*********************/
+#learnMore, button {
+    padding: 10px;
+    background-color: #D83F87;
+    color: #49274A;
+    font-size: 15px;
+    border: none;
+}
+
+/* ------------ FOOTER ----------------*/
+footer {
+    font-size: 20px;
+}
+
+footer.third-section h1 {
+    width: 80px;
+    display: inline;
+    vertical-align: middle;
+}
+
+#movingElement {
+    position: absolute;
+    left: 0;
+}

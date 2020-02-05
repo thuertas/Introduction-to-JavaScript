@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Introduction to JavaScript</title>
+        <link rel="icon" type="icon" href="images/drawing.png"/> <!-- Icon made by Freepik on Flaticon-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style/main.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Finger+Paint|Source+Sans+Pro&display=swap" rel="stylesheet"> <!--Google Fonts-->
+        <script src="js/main.js"></script>
+    </head>
+    <body onload="alert('Hello!'); setInterval(textColor,30000);"><!--Opens the alert and starts the textColor function-->
+        <!--HEADER-->
+        <header>
+            <div class="main-nav">
+                <a class="brand-font" href="index.html#home">
+                    <img src="images/drawing.png" alt="donut icon"> <!-- Icon made by Freepik on Flaticon-->
+                    Drawing
+                </a>
+                <a class="brand-font" id="drawing" href="index.html#home">Other Hobbies</a>
+                <a class="brand-font" id="sport">...</a>
+            </div>
+        </header>
+        <!--END OF HEADER-->
+
+        <!-- BODY--> 
+        <!--Slide works with JS-->
+        <ul id="slider">
+            <li class="slide showing"><img src="images/slide1.jpg" alt="girl portrait with rainvow"></li><!--Personal drawings-->
+            <li class="slide"><img src="images/slide2.jpg" alt="couple in the tub"></li><!--Personal drawings-->
+            <li class="slide"><img src="images/slide3.jpg" alt="family"></li><!--Personal drawings-->
+        </ul>
+        <!--end of slide-->
+
+        <div class="opening-section">
+            <h1 class="title-font">Wellcome!!</h1>
+            <button onclick="addName()" id="btnAddName">Add your Name</button>
+            <h2 class="title-font" id="Name"></h2><!--This one will show the Greeting message and hide the button-->
+            <p>
+                Thank you for visiting. Here I want to show you one of my hobbies:
+            </p>
+            <h3 class="title-font">Drawing</h3>
+            <p>
+                Is a form of visual art in which a person uses various drawing instruments to mark paper or 
+                another two-dimensional medium. Instruments include graphite pencils, pen and ink, various kinds 
+                of paints, inked brushes, colored pencils, crayons, charcoal, chalk, pastels, various kinds of 
+                erasers, markers, styluses, and various metals (such as silverpoint). Digital drawing is the act 
+                of using a computer to draw. Common methods of digital drawing include a stylus or finger on a 
+                touchscreen device, stylus- or finger-to-touchpad, or in some cases, a mouse. There are many 
+                digital art programs and devices.
+            </p>
+            <p id="myText" style="display: none;"><!--the hidden text that will shown when clicking the learn more btn-->
+                A drawing instrument releases a small amount of material onto a surface, leaving a visible mark. 
+                The most common support for drawing is paper, although other materials, such as cardboard, wood, 
+                plastic, leather, canvas, and board, may be used. Temporary drawings may be made on a blackboard 
+                or whiteboard or indeed almost anything. The medium has been a popular and fundamental means of 
+                public expression throughout human history. It is one of the simplest and most efficient means of 
+                communicating visual ideas.[1] The wide availability of drawing instruments makes drawing one of 
+                the most common artistic activities.
+                <br>
+                In addition to its more artistic forms, drawing is frequently used in commercial illustration, 
+                animation, architecture, engineering and technical drawing. A quick, freehand drawing, usually 
+                not intended as a finished work, is sometimes called a sketch. An artist who practices or works 
+                in technical drawing may be called a drafter, draftsman or a draughtsman.
+            </p>
+            <button onclick="learnMoreButton()" id="learnMore">Learn More</button>
+            <script>
+                
+            </script>
+        </div>
+        <div class="second-section">
+            <!--The follwing image will changed when hovered-->
+            <img onmouseover="changeImg()" onmouseout="normalImg()" id="IMG" class="main-img" src="images/portrait.jpg" alt="tart"><!--Personal drawings-->
+            <h1 class="title-font">Portrait Drawings</h1>
+            <p>
+                Portraits are effective and compelling when they tell us something about the person. A good 
+                portrait is not just a visual representation of a person; it will also reveal something about 
+                the essence of the person. What the portrait reveals may not be completely obvious - sometimes 
+                it can be cleverly implied through a certain expression or pose, an included object, or the artist's 
+                use of color. Sometimes the person in the portrait can become iconic, representing a wider group of 
+                people from a specific period in time, who share something in common.
+            </p>
+            <cite><a href="https://www.art-is-fun.com/portrait-painting">"Portrait Painting and Drawing" By Thaneeya McArdle</a></cite>
+            <br><br>
+            <img src="images/portrait-woman.jpg" alt="tart"><!--Personal drawings-->
+        </div>
+        <div class="third-section">
+            <h1 class="title-font">Nude drawings</h1>
+            <p>
+                The human form, in all of its glorious architecture, is the theme of this collection of drawings. 
+                Here, artists capture the body's articulate eloquence in works that display both male and female figure 
+                studies. The nude subject is a powerful and inspiring muse, and artists interpret the human figure in a 
+                myriad of settings, periods, and artistic techniques. These artworks would be magnificent in the natural 
+                setting of the powder room or the boudoir.
+            </p>
+            <cite><a href="https://fineartamerica.com/art/drawings/nude">FineArtAmerica</a></cite>
+            <br><br>
+            <img src="images/nude-1.jpg" alt="tart"><!--Personal drawings-->
+            <img src="images/nude-2.jpg" alt="tart"><!--Personal drawings-->
+        </div>
+        <div class="second-section">
+            <img class="main-img" src="images/comic.jpg" alt=""><!--Photo by Eiliv-Sonas Aceron on Unsplash-->
+            <h1 class="title-font">Comic</h1>
+            <p>
+                is a medium used to express narratives or other ideas through images, usually combined with text. It typically 
+                takes the form of a sequence of panels of images. Textual devices such as speech balloons, captions, and 
+                onomatopoeia can indicate dialogue, narration, sound effects, or other information. The size and arrangement 
+                of panels contribute to narrative pacing. Cartooning and other forms of illustration are the most common 
+                image-making means in comics; fumetti is a form which uses photographic images. Common forms include comic 
+                strips, editorial and gag cartoons, and comic books. Since the late 20th century, bound volumes such as graphic 
+                novels, comic albums, and tankōbon have become increasingly common, while online webcomics have proliferated in the 
+                21st century with the growth of the Internet.
+            </p>
+            <cite><a href="https://en.wikipedia.org/wiki/Comics">Comics</a></cite>
+            <br><br><br><br>
+        </div>
+        <!--END OF BODY-->
+        <!--FOOTER-->
+        <footer class="third-section">
+            <div id="movingElement" onclick="myMove()">
+                <h1 id="colorChanging" class="brand-font">Bye!!!</h1><!--This text will move to the right when clicked and will change color every 30min all the time-->
+            </div>
+        </footer>
+        <!--END OF FOOTER-->
+    </body>
+</html>
